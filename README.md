@@ -1,2 +1,1 @@
-# CTFS
-## This repository contains write ups of challenges from different websites
+#### This repository contains write ups of challenges from different websites
