@@ -6,4 +6,4 @@
 #### Syntax error. OK, maybe there's a filter we have to bypass. Since our first query dumped the table, we can assume that single quotes aren't filtered.
 Solution: So lets try
 > ' uNion sElect * from users'
-and success! The next flag is in the users table.
+#### and success! The next flag is in the users table.
