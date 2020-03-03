@@ -1,0 +1,2 @@
+## Where can my Robot go?
+#### The challenge description hints toward robots.txt. First, change the URL to www.ctflearn.com/robots.txt. The page then shows that bots are not allowed to access /70r3hnanldfspufdsoifnlds.html. Although bots cannot access this link, we can easily do so by entering the URL www.ctflearn.com/70r3hnanldfspufdsoifnlds.html, revealing the flag.   
