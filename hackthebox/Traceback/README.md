@@ -1,3 +1,3 @@
 # Traceback 
 
-![Alt text](card.png)
+![Alt text](../card.png)
