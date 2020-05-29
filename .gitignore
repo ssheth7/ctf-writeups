@@ -1,5 +1,5 @@
-/hackthebox/Traceback/README.md
-/hackthebox/Resolute/README.md
-/hackthebox/ServMon/README.md
+hackthebox/Traceback/*
+hackthebox/Resolute/*
+hackthebox/ServMon/*
 .gitignore
 
