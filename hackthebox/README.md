@@ -7,6 +7,5 @@ Write ups will be available once the box is retired
 ## User owned boxes
 ![Alt text](Resolute.png)
 ## Retired boxes
-Irked
-
+![Alt text](Irked/images/0.png)
 
