@@ -64,7 +64,9 @@ We found two things, /administrator
 and /secret.txt
 
 ![Alt text](images/3.png)
+
 And it turns out to be base64 encoded so lets see what it's hiding.
+
 ```bash
 kali@kali:~$ echo 'Q3VybGluZzIwMTgh' | base64 -d
 Curling2018!
@@ -73,7 +75,7 @@ kali@kali:~$
 And with the credentials floris:Curling2018! we are able to login to the admin panel. 
 ![Alt text](images/4.png)
 ## Foothold
-After poking around, we find a media panel to upload pictures, so I tried to upload a php reverse shell but it gave me notice telling me that the file was unsafe. But I did find a php editor where we can edit the php to give me a reverse shell and then use the preview feature to trigger it.
+After poking around, we find a media panel to upload pictures, so I tried to upload a php reverse shell but it gave me notice telling me that the file was unsafe. But I did find a php editor where we can edit the php to give me a reverse shell and then use the preview feature to trigger it. The php shell I used is available here: http://pentestmonkey.net/tools/web-shells/php-reverse-shell. 
 ![Alt text](images/5.png)
 and
 ![Alt text](images/6.png)
@@ -135,7 +137,7 @@ cat password_backup
 000000f0: 819b bb48                                ...H
 www-data@curling:/home/floris$ 
 ```
-Lets copy this to a text file, edit out the portion on the right, and try to revert back form the hexdump. 
+Lets copy this to a text file, edit out the portion on the right, and try to revert back from the hexdump. 
 ```bash
 kali@kali:~/hackthebox/Practice/Curling$ cat dump.txt
 00000000 425a 6839 3141 5926 5359 819b bb48 0000  
@@ -169,7 +171,7 @@ kali@kali:~/hackthebox/Practice/Curling$ cat password.txt
 5d<wdCbdZu)|hChXll
 ```
 Great, let's log into floris!
-'''bash
+```bash
 www-data@curling:/home/floris$ su floris
 su floris
 Password: 5d<wdCbdZu)|hChXll
