@@ -1,1 +1,0 @@
-### This repo contains challenges from a company website that they use for hiring
